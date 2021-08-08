@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portrait hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mygallery">
+        <img src="gallery/10w.jpg" alt="//////" title="hello" onclick="openFullImg(this.src)">
+        <img src="gallery/11w.jpg" alt="//////" onclick="openFullImg(this.src)">
+        <img src="gallery/12w.jpg" alt="//////" onclick="openFullImg(this.src)">
+
+        <img src="gallery/9a.jpg" alt="//////" onclick="openFullImg(this.src)">
+        <img src="gallery/9b.jpeg" alt="//////" onclick="openFullImg(this.src)">
+        <img src="gallery/9c.jpeg" alt="//////" onclick="openFullImg(this.src)">
+
+        <img src="gallery/1a.jpg" alt="//////" onclick="openFullImg(this.src)">
+        <img src="gallery/2a.jpg" alt="//////" onclick="openFullImg(this.src)">
+        <img src="gallery/3a.jpeg" alt="//////" onclick="openFullImg(this.src)">
+        
+        <img src="gallery/4a.jpg" alt="//////" onclick="openFullImg(this.src)">
+        <img src="gallery/5a.jpg" alt="//////" onclick="openFullImg(this.src)">
+        <img src="gallery/6a.jpg" alt="//////" onclick="openFullImg(this.src)">
+
+        
+        
+
+    </div>
+    <div class="full" id="fullImgBox">
+        <img src="gallery/1a.jpg" alt="//////"  id="fullImg">
+        <figcaption>sdfgghjhj</figcaption>
+        <span onclick="closeFullImg()">X</span>
+    </div>
+
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(photo){
+            fullImgBox.style.display = "flex";
+            fullImg.src = photo;
+        }
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+    </script>
+</body>
+</html>
