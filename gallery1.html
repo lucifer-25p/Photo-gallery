@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="welcome">
+        <p> <h2>Here, you can see some of my Portrait works. </h2>
+         </p>
+        <h4>N.B : Hover over any picture to see the name of the Subject and click on to see.</h4>
+    </div>
     <div class="mygallery">
         <img src="art/1.jpg" alt="//////"  title="Freddie Mercury" onclick="openFullImg(this.src)">
         <img src="art/2.jpg" alt="//////"  title="Childhood me with my mother" onclick="openFullImg(this.src)">     
@@ -23,14 +28,23 @@
         <img src="art/1.jpg" alt="//////" id="fullImg">
         <span onclick="closeFullImg()"> X </span>
     </div>
-    <div>
-        <form action="index.html">
-            <input type="submit" value="Return to Homepage">
-        </form>
-        <span><form action="gallery.html">
-            <input type="submit" value="Return to Photo gallery">
-        </form></span>
-    </div>
+    <form action="index.html">
+        <div style="text-align: center ">
+          <button class="glow-on-hover" type="submit"><h3>RETURN HOME</h3></button>
+        </div>
+      </form>
+      <br>
+      <form action="gallery.html">
+        <div style="text-align: center ">
+          <button class="glow-on-hover" type="submit"><h3>PHOTO GALLERY</h3></button>
+        </div>
+      </form>
+      <br>
+      <div style="text-align: center;">
+        <footer>
+            <p>&copy;2021 Pritam Karmakar , All rights reserved. </p>
+        </footer>
+      </div>
 
     <script>
         var fullImgBox = document.getElementById("fullImgBox");

@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="welcome">
+        <p> <h2>Here, I am presenting you some of my captured photographs. </h2>
+        Those pictures are mainly captured with my smartphone, <br> and afrterwards I have tried to add pinch of editing to enhance its inner abstractness. </p>
+        <h4>N.B : You can hover over every pictures and click on any picture you want to see.</h4>
+    </div>
     <div class="mygallery">
         <img src="gallery/10w.jpg" alt="//////" onclick="openFullImg(this.src)">
         <img src="gallery/11w.jpg" alt="//////" onclick="openFullImg(this.src)">
@@ -28,15 +33,19 @@
     </div>
     <div class="full" id="fullImgBox">
         <img src="gallery/1a.jpg" alt="//////"  id="fullImg">
-        <figcaption>sdfgghjhj</figcaption>
         <span onclick="closeFullImg()">X</span>
     </div>
-    <div>
-        <form action="gallery1.html">
-            <input type="submit" value="Art gallery">
-        </form>
-    </div>
-
+    <form action="gallery1.html">
+        <div style="text-align: center ">
+          <button class="glow-on-hover" type="submit"><h3>ART GALLERY</h3></button>
+        </div>
+      </form>
+    <br>
+      <div style="text-align: center;">
+        <footer>
+            <p>&copy;2021 Pritam Karmakar , All rights reserved. </p>
+        </footer>
+      </div>
     <script>
         var fullImgBox = document.getElementById("fullImgBox");
         var fullImg = document.getElementById("fullImg");
