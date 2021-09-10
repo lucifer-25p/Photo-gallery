@@ -9,11 +9,11 @@
 </head>
 <body>
     <div class="cotainer" >
-      <video height="70%" width="100%" autoplay loop muted>
-        <source src="video1.mp4" type="video/mp4">
+      <video height="70%" width="100%" id="vid" autoplay loop muted>
+        <source src="./pexels-mart-production-7565452.mp4" type="video/mp4">
       </video>
       <div class="text-box">
-        <h1>MY GALLERY</h1>
+        <h1>GALLERY</h1>
       </div>
       <form action="gallery.html">
       <div style="text-align: center ">
@@ -21,5 +21,9 @@
       </div>
     </form>
     </div>  
+    <script>
+      var v = document.getElementById("vid");
+      v.playbackRate = 1.5;
+    </script>
 </body>
 </html>
