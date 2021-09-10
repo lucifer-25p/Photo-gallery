@@ -1,9 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Righteous&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing:border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bangers', cursive;
+  
 }
 body{
   overflow-y: hidden;
